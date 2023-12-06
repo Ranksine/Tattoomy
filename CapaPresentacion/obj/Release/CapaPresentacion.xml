@@ -1,0 +1,666 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CapaPresentacion
+</name>
+</assembly>
+<members>
+<member name="T:CapaPresentacion.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:CapaPresentacion.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:CapaPresentacion.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet.InsumosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet.InsumosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet.InsumosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSetTableAdapters.InsumosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(CapaPresentacion.TattoomyDBDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(CapaPresentacion.TattoomyDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(CapaPresentacion.TattoomyDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSetTableAdapters.TableAdapterManager.UpdateAll(CapaPresentacion.TattoomyDBDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet1.TatuadorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet1.TatuadorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet1.TatuadorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet1TableAdapters.TatuadorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(CapaPresentacion.TattoomyDBDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(CapaPresentacion.TattoomyDBDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(CapaPresentacion.TattoomyDBDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet1TableAdapters.TableAdapterManager.UpdateAll(CapaPresentacion.TattoomyDBDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet2.ClienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet2.ClienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet2.ClienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet2TableAdapters.ClienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(CapaPresentacion.TattoomyDBDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(CapaPresentacion.TattoomyDBDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(CapaPresentacion.TattoomyDBDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet2TableAdapters.TableAdapterManager.UpdateAll(CapaPresentacion.TattoomyDBDataSet2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.CategoriasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.CitasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ClienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ComprasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DB_ErrorsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DetCitaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DetCompraDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DetVentaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.InsumosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListaNegraDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.MarcasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ProveedoresDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.TatuadorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.VentasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarComprasInsumoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarComprasRangoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListasComprasProveedorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarVentasRangoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarVentasMayorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarVentasInsumoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.CategoriasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.CitasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ClienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ComprasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DB_ErrorsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DetCitaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DetCompraRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DetVentaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.InsumosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListaNegraRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.MarcasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ProveedoresRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.TatuadorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.VentasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarComprasInsumoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarComprasRangoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListasComprasProveedorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarVentasRangoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarVentasMayorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarVentasInsumoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.CategoriasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.CitasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ClienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ComprasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DB_ErrorsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DetCitaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DetCompraRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.DetVentaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.InsumosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListaNegraRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.MarcasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ProveedoresRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.TatuadorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.VentasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarComprasInsumoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarComprasRangoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListasComprasProveedorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarVentasRangoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarVentasMayorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3.ListarVentasInsumoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.CategoriasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.CitasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.ClienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.ComprasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.DB_ErrorsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.DetCitaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.DetCompraTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.DetVentaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.InsumosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.ListaNegraTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.MarcasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.ProveedoresTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.TatuadorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.VentasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.ListarComprasInsumoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.ListarComprasRangoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.ListasComprasProveedorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.ListarVentasRangoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.ListarVentasMayorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.ListarVentasInsumoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(CapaPresentacion.TattoomyDBDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(CapaPresentacion.TattoomyDBDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(CapaPresentacion.TattoomyDBDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:CapaPresentacion.TattoomyDBDataSet3TableAdapters.TableAdapterManager.UpdateAll(CapaPresentacion.TattoomyDBDataSet3)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:CapaPresentacion.TattoomyDBDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

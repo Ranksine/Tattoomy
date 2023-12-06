@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA23DE1F-DFFA-44D1-B15F-B2FB37FCA406}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CapaPresentacion.My.MyApplication</StartupObject>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CapaPresentacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CapaPresentacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>CapaPresentacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>CapaPresentacion.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.5.1.0\lib\net462\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq, Version=4.18.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.18.2\lib\net462\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCategoria.Designer.vb">
+      <DependentUpon>frmCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.vb">
+      <DependentUpon>frmClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBlacklist.Designer.vb">
+      <DependentUpon>frmBlacklist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBlacklist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompras.Designer.vb">
+      <DependentUpon>frmCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsBlacklist_Fecha.Designer.vb">
+      <DependentUpon>frmConsBlacklist_Fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsBlacklist_Fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsBlacklist_Rango.Designer.vb">
+      <DependentUpon>frmConsBlacklist_Rango.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsBlacklist_Rango.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsBlacklist_Tatuador.Designer.vb">
+      <DependentUpon>frmConsBlacklist_Tatuador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsBlacklist_Tatuador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsCategoria.Designer.vb">
+      <DependentUpon>frmConsCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsCompras_Fecha.Designer.vb">
+      <DependentUpon>frmConsCompras_Fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsCompras_Fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsCompras_Proveedor.Designer.vb">
+      <DependentUpon>frmConsCompras_Proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsCompras_Proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsCompras_Rango.Designer.vb">
+      <DependentUpon>frmConsCompras_Rango.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsCompras_Rango.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsMarcas.Designer.vb">
+      <DependentUpon>frmConsMarcas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsMarcas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsProveedores.Designer.vb">
+      <DependentUpon>frmConsProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsVentas_Abajo.Designer.vb">
+      <DependentUpon>frmConsVentas_Abajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsVentas_Abajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsVentas_Arriba.Designer.vb">
+      <DependentUpon>frmConsVentas_Arriba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsVentas_Arriba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsVentas_Fecha.Designer.vb">
+      <DependentUpon>frmConsVentas_Fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsVentas_Fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsVentas_Rango.Designer.vb">
+      <DependentUpon>frmConsVentas_Rango.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsVentas_Rango.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsumos.Designer.vb">
+      <DependentUpon>frmInsumos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsumos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMarcas.Designer.vb">
+      <DependentUpon>frmMarcas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMarcas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMnuReporteCompras.Designer.vb">
+      <DependentUpon>frmMnuReporteCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMnuReporteCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMnuReporteVentas.Designer.vb">
+      <DependentUpon>frmMnuReporteVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMnuReporteVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMnu_ConsBlacklist.Designer.vb">
+      <DependentUpon>frmMnu_ConsBlacklist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMnu_ConsBlacklist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMnu_ConsCompras.Designer.vb">
+      <DependentUpon>frmMnu_ConsCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMnu_ConsCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMnu_ConsVentas.Designer.vb">
+      <DependentUpon>frmMnu_ConsVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMnu_ConsVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores.Designer.vb">
+      <DependentUpon>frmProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteCompras_Insumos.Designer.vb">
+      <DependentUpon>frmReporteCompras_Insumos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteCompras_Insumos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteCompras_Proveedor.Designer.vb">
+      <DependentUpon>frmReporteCompras_Proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteCompras_Proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteCompras_Rango.Designer.vb">
+      <DependentUpon>frmReporteCompras_Rango.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteCompras_Rango.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteVentas_Insumo.Designer.vb">
+      <DependentUpon>frmReporteVentas_Insumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteVentas_Insumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteVentas_Rango.Designer.vb">
+      <DependentUpon>frmReporteVentas_Rango.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteVentas_Rango.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte_Movimientos.Designer.vb">
+      <DependentUpon>frmReporte_Movimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte_Movimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte_Catalogos.Designer.vb">
+      <DependentUpon>frmReporte_Catalogos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte_Catalogos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRespRest.Designer.vb">
+      <DependentUpon>frmRespRest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRespRest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTatuadores.Designer.vb">
+      <DependentUpon>frmTatuadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTatuadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTraspasoHistorico.Designer.vb">
+      <DependentUpon>frmTraspasoHistorico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTraspasoHistorico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentas.Designer.vb">
+      <DependentUpon>frmVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TattoomyDBDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TattoomyDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TattoomyDBDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TattoomyDBDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TattoomyDBDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TattoomyDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TattoomyDBDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TattoomyDBDataSet3.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCategoria.resx">
+      <DependentUpon>frmCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBlacklist.resx">
+      <DependentUpon>frmBlacklist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompras.resx">
+      <DependentUpon>frmCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsBlacklist_Fecha.resx">
+      <DependentUpon>frmConsBlacklist_Fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsBlacklist_Rango.resx">
+      <DependentUpon>frmConsBlacklist_Rango.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsBlacklist_Tatuador.resx">
+      <DependentUpon>frmConsBlacklist_Tatuador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsCategoria.resx">
+      <DependentUpon>frmConsCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsCompras_Fecha.resx">
+      <DependentUpon>frmConsCompras_Fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsCompras_Proveedor.resx">
+      <DependentUpon>frmConsCompras_Proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsCompras_Rango.resx">
+      <DependentUpon>frmConsCompras_Rango.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsMarcas.resx">
+      <DependentUpon>frmConsMarcas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsProveedores.resx">
+      <DependentUpon>frmConsProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsVentas_Abajo.resx">
+      <DependentUpon>frmConsVentas_Abajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsVentas_Arriba.resx">
+      <DependentUpon>frmConsVentas_Arriba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsVentas_Fecha.resx">
+      <DependentUpon>frmConsVentas_Fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsVentas_Rango.resx">
+      <DependentUpon>frmConsVentas_Rango.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsumos.resx">
+      <DependentUpon>frmInsumos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarcas.resx">
+      <DependentUpon>frmMarcas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMnuReporteCompras.resx">
+      <DependentUpon>frmMnuReporteCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMnuReporteVentas.resx">
+      <DependentUpon>frmMnuReporteVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMnu_ConsBlacklist.resx">
+      <DependentUpon>frmMnu_ConsBlacklist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMnu_ConsCompras.resx">
+      <DependentUpon>frmMnu_ConsCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMnu_ConsVentas.resx">
+      <DependentUpon>frmMnu_ConsVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores.resx">
+      <DependentUpon>frmProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteCompras_Insumos.resx">
+      <DependentUpon>frmReporteCompras_Insumos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteCompras_Proveedor.resx">
+      <DependentUpon>frmReporteCompras_Proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteCompras_Rango.resx">
+      <DependentUpon>frmReporteCompras_Rango.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteVentas_Insumo.resx">
+      <DependentUpon>frmReporteVentas_Insumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteVentas_Rango.resx">
+      <DependentUpon>frmReporteVentas_Rango.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte_Catalogos.resx">
+      <DependentUpon>frmReporte_Catalogos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte_Movimientos.resx">
+      <DependentUpon>frmReporte_Movimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRespRest.resx">
+      <DependentUpon>frmRespRest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTatuadores.resx">
+      <DependentUpon>frmTatuadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTraspasoHistorico.resx">
+      <DependentUpon>frmTraspasoHistorico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentas.resx">
+      <DependentUpon>frmVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCompras_Proveedor.rdlc" />
+    <EmbeddedResource Include="ReporteCompras_Rango.rdlc" />
+    <EmbeddedResource Include="ReporteCompras_Insumo.rdlc" />
+    <EmbeddedResource Include="ReporteCategorias.rdlc" />
+    <EmbeddedResource Include="ReporteClientes.rdlc" />
+    <EmbeddedResource Include="ReporteInsumos.rdlc" />
+    <EmbeddedResource Include="ReporteMarcas.rdlc" />
+    <EmbeddedResource Include="ReporteProveedores.rdlc" />
+    <EmbeddedResource Include="ReporteTatuadores.rdlc" />
+    <EmbeddedResource Include="ReporteVentas_Insumos.rdlc" />
+    <EmbeddedResource Include="ReporteVentas_Rango.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="TattoomyDBDataSet1.xsc">
+      <DependentUpon>TattoomyDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TattoomyDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TattoomyDBDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TattoomyDBDataSet1.xss">
+      <DependentUpon>TattoomyDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TattoomyDBDataSet11.xsc">
+      <DependentUpon>TattoomyDBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="TattoomyDBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TattoomyDBDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TattoomyDBDataSet11.xss">
+      <DependentUpon>TattoomyDBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="TattoomyDBDataSet2.xsc">
+      <DependentUpon>TattoomyDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TattoomyDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TattoomyDBDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TattoomyDBDataSet2.xss">
+      <DependentUpon>TattoomyDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TattoomyDBDataSet3.xsc">
+      <DependentUpon>TattoomyDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TattoomyDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TattoomyDBDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TattoomyDBDataSet3.xss">
+      <DependentUpon>TattoomyDBDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.vbproj">
+      <Project>{0fdc24c0-c587-4089-b671-f8db0053d9f0}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.vbproj">
+      <Project>{9a27c00e-4a9b-4fb1-b829-7cfc30a43559}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.vbproj">
+      <Project>{975aa42b-cd28-48e4-9b12-c9b578c922c2}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
